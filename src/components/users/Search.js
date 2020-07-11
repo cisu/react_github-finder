@@ -31,9 +31,9 @@ const Search = ({ searchUsers, showClear, clearUsers, setAlert }) => {
                     onChange={onChange} />
                 <input type="submit" value='Search' className='btn btn-dark btn-block' />
             </form>
-            {showClear && <button className="btn btn-light btn-block" onClick={clearUsers}>
+            {showClear && (<button className="btn btn-light btn-block" onClick={clearUsers}>
                 Clear
-                    </button>}
+            </button>)}
 
         </div>
     )
